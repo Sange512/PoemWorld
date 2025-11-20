@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d158754904887d44cbfbb6f85b32bf21, type: 3}
+  m_Name: PoemData1
+  m_EditorClassIdentifier: 
+  poemId: wlspb
+  title: "\u671B\u5E90\u5C71\u7011\u5E03"
+  lines:
+  - "\u65E5\u7167\u9999\u7089\u751F\u7D2B\u70DF\uFF0C"
+  - "\u9065\u770B\u7011\u5E03\u6302\u524D\u5DDD\uFF1B"
+  - "\u98DE\u6D41\u76F4\u4E0B\u4E09\u5343\u5C3A\uFF0C"
+  - "\u7591\u662F\u94F6\u6CB3\u843D\u4E5D\u5929\u3002"
+  narration: {fileID: 8300000, guid: fa24b5b2c9436e849bbe319abc215781, type: 3}
+  illustration: {fileID: 21300000, guid: 7ec8f1820c38e8244b205215b17da72e, type: 3}
