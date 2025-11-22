@@ -11,6 +11,8 @@ public class FirstPersonController : MonoBehaviour
     public float runSpeed = 8f;         // 加速跑步速度
     public float gravity = -9.8f;       // 重力加速度
     public float jumpHeight = 2f;       // 跳跃高度
+    public bool canMove = true; // 是否可以移动
+    public bool canLook = true; // 是否可以转动视角
 
     [Header("鼠标视角参数")]
     public float mouseSensitivity = 100f;  // 初始鼠标灵敏度
@@ -25,7 +27,7 @@ public class FirstPersonController : MonoBehaviour
     public float groundedGraceTime = 0.2f; // 离地多少秒内仍可跳（“土狼时间”）
 
     private CharacterController controller;
-    private Vector3 velocity;
+    public Vector3 velocity;
     private float xRotation = 0f;
     private float groundedTimer; // 着地缓冲时间（避免跳跃卡顿）
 
@@ -40,8 +42,14 @@ public class FirstPersonController : MonoBehaviour
 
     void Update()
     {
-        HandleMouseLook();       // 控制视角
-        HandleMovement();        // 控制移动/跳跃
+        if(canLook)
+        {
+            HandleMouseLook();       // 控制视角
+        }
+        if(canMove)
+        {
+            HandleMovement();
+        }
         AdjustMouseSensitivity();// 动态调节灵敏度
     }
 
@@ -114,5 +122,14 @@ public class FirstPersonController : MonoBehaviour
             mouseSensitivity = Mathf.Clamp(mouseSensitivity - sensitivityStep, minSensitivity, maxSensitivity);
             Debug.Log($"鼠标灵敏度减少至: {mouseSensitivity}");
         }
+    }
+
+    public void LockMovement(bool isLocked)
+    {
+        canMove = !isLocked;
+        canLook = !isLocked;
+        
+        Cursor.lockState = isLocked ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.visible = isLocked; // 锁定移动时显示鼠标，反之隐藏
     }
 }
