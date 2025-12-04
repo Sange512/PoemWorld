@@ -18,6 +18,7 @@ public class MinimapController : MonoBehaviour
     public float minZoom;
     public float maxZoom;
     public float zoomSpeed = 1f;
+    public float expandedNum = 2000;
 
     [Header("传送点设置")]
     public GameObject teleportIconPrefab; // 需包含Image（图标）和Text（名称）组件
@@ -82,7 +83,7 @@ public class MinimapController : MonoBehaviour
         if (isExpanded)
         {
             minimapRect.anchoredPosition = Vector2.zero;
-            minimapRect.sizeDelta = new Vector2(1200, 1200);
+            minimapRect.sizeDelta = new Vector2(expandedNum, expandedNum);
             SpawnTeleportIcons(); // 生成带名称的图标
             if (fpsController != null)
                 fpsController.LockMovement(true);
