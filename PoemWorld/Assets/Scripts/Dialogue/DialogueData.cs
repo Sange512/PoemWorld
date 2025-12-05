@@ -24,6 +24,9 @@ public class DialogueNode
 
     [Header("下一句（自动跳转用， -1 表示结束，若为分支节点不用设置）")]
     public int nextIndex = -1;
+
+    [Header("节点事件（可选）：到达该节点时触发")]
+    public string command;   // 新增
 }
 
 [CreateAssetMenu(fileName = "NewDialogue", menuName = "Dialogue/NPC Dialogue")]

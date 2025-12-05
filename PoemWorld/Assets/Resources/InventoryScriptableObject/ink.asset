@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26f1dea38ed99d343b4874f17cd1d89b, type: 3}
-  m_Name: book
+  m_Name: ink
   m_EditorClassIdentifier: 
-  itemId: 003
-  displayName: "\u4E66"
-  description: "\u8FD9\u662F\u4E00\u672C\u4E66"
-  icon: {fileID: 21300000, guid: 0764ddfb6c75c844d9a181eeff41bcc0, type: 3}
+  itemId: 001
+  displayName: "\u781A\u53F0"
+  description: "\u8FD9\u662F\u4E00\u4E2A\u781A\u53F0\n"
+  icon: {fileID: 21300000, guid: 9ec634407272d6942bf9fab6d534989b, type: 3}

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26f1dea38ed99d343b4874f17cd1d89b, type: 3}
-  m_Name: pen
+  m_Name: paper
   m_EditorClassIdentifier: 
-  itemId: 002
-  displayName: "\u6BDB\u7B14"
-  description: "\u8FD9\u662F\u4E00\u53EA\u6BDB\u7B14"
-  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  itemId: 003
+  displayName: "\u7EB8"
+  description: "\u8FD9\u662F\u4E00\u5F20\u7EB8"
+  icon: {fileID: 21300000, guid: 0764ddfb6c75c844d9a181eeff41bcc0, type: 3}

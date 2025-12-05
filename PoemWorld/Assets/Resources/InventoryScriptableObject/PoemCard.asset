@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26f1dea38ed99d343b4874f17cd1d89b, type: 3}
-  m_Name: map
+  m_Name: PoemCard
   m_EditorClassIdentifier: 
-  itemId: 001
-  displayName: "\u5730\u56FE"
-  description: "\u8FD9\u662F\u4E00\u5F20\u5730\u56FE"
-  icon: {fileID: 21300000, guid: 9ec634407272d6942bf9fab6d534989b, type: 3}
+  itemId: 004
+  displayName: "\u671B\u5E90\u5C71\u7011\u5E03\u8BD7\u5361"
+  description: "\u89E3\u9501\u671B\u5E90\u5C71\u7011\u5E03\u83B7\u5F97\u7684\u5956\u52B1"
+  icon: {fileID: 21300000, guid: 7ec8f1820c38e8244b205215b17da72e, type: 3}

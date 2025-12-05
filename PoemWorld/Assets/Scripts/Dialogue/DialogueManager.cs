@@ -101,6 +101,12 @@ public class DialogueManager : MonoBehaviour
         //从一个集合中获取指定索引的元素，并将其赋值给变量 node
         var node = currentData.nodes[nodeIndex];
 
+        // 新增：执行节点命令
+        if (!string.IsNullOrEmpty(node.command))
+        {
+            DialogueCommandRouter.Execute(node.command);
+        }
+
         // 切换说话者的名字与头像
         if (node.speaker == Speaker.NPC)
         {
@@ -254,8 +260,8 @@ public class DialogueManager : MonoBehaviour
         IsOpen = false;
 
         // 恢复交互提示UI
-        if (interactHintUI)
-            interactHintUI.SetActive(true);
+        //if (interactHintUI)
+        //    interactHintUI.SetActive(true);
     }
 
     void ClearChoices()

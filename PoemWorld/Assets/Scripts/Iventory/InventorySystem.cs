@@ -71,7 +71,7 @@ public class InventorySystem : MonoBehaviour
     }
 
     /// <summary>
-    /// 是否拥有指定数量
+    /// 检测是否拥有指定数量
     /// </summary>
     public bool HasItem(InventoryItemData itemData, int amount = 1)
     {

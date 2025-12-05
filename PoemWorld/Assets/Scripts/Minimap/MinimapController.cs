@@ -76,6 +76,9 @@ public class MinimapController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// µØÍ¼·Å´ó
+    /// </summary>
     private void ToggleMinimapSize()
     {
         isExpanded = !isExpanded;

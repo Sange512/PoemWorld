@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class FirstPersonController : MonoBehaviour
 {
-    //在对话中金庸移动/视角
+    //在对话中禁用移动/视角
     //if (DialogueManager.IsOpen) return;
 
     [Header("移动参数")]
